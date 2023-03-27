@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+
+        let name1 = "홍길동";
+        let name2 = "홍길순";
+        let str1 = "나는 '홍길동'임";
+        let str2 = "나는 \"홍길동\"임";
+        let str3 = "나는 \\홍길동\\임";
+        
+        console.log(str1);
+
+        //undefined
+        let u1;
+        console.log();
+
+        //null
+        let a = null;
+        console.log(a) + 1;
+
+        //object = java의 class
+        let person1 = {};
+        person1.fristname = "길동";
+        person1.lastname = "홍";
+        person1.age = 20;
+
+        let person2 = {
+            firstname : "길순",
+            lastname : "홍",
+            age : 18
+        };
+
+        let person3= {};
+        person3["firstname"] = "철수";
+        person3["lastname"] = "김";
+        person3[age] = 15;
+
+        console.log(person1.firstname);
+        console.log(person1.lastname);
+        console.log(person1.age);
+
+        //Array
+        let car = ["현대", "기아", "볼보", "테슬라", "벤츠", undefined, null];
+        console.log(car[0]);
+
+        let arr4 = [];
+        arr4.push("정국");
+        arr4.push("null");
+        arr4.push("undefined");
+
+        for(var i = 0; i <= arr4.length; i++){
+            console.log(arr4[i]);
+        }
+
+        let isAdult = true;
+        let num = 5;
+        let num2 = 7;
+        console.log(num > num2);
+
+        console.log(typeof num1);
+ 
+    </script>
+</body>
+</html>
