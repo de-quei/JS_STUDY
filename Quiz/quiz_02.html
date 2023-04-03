@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코테문제2</title>
+</head>
+<body>
+    <script>
+        // 삼각형 세 변의 길이를 받고, 삼각형인지 판별하세요.
+        // [조건 1] : 배열, 반복, 정렬 사용하지 마세요! if문만 사용할 것!
+        // 내가 가는 방향이 해답, 정답은 없으니 자신있게 코드 짤 것!
+        
+        function Solution(a, b, c){
+            let answer;
+            var max, sum; 
+            //max = 가장 긴 변을 저장
+            //sum = 가장 긴 변을 뺀 나머지 변의 합
+
+            if(a < b && c < b){         //가장 긴 변 저장
+                max = b;
+            }else if(b < a && c < a){
+                max = a;
+            }else if(a < c && b < c){
+                max = c;
+            }
+
+            sum = (a+b+c) - max;        //모든 변의 합 - 가장 긴 변
+
+            if(sum > max){              //모든 변의 합 > 가장 긴변 -> YES return.
+                answer = "YES";
+            }else{
+                answer = "NO";
+            }
+
+            return answer;
+        }
+        console.log(Solution(6, 2, 11));
+        console.log(Solution(8, 11, 13));
+        console.log(Solution(1, 2, 3));
+    </script>
+</body>
+</html>
