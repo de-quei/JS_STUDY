@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코테 문제1</title>
+</head>
+<body>
+    <script>
+        // 세 자연수를 받고 가장 작은 값을 출력하세요.
+        // [조건 1] : 배열, 반복, 정렬 사용하지 마세요! if문만 사용할 것!
+        function Solution(a, b, c){
+            let answer ;
+            if(a > b && c > b){
+                answer = b;
+            }else if(b > a && c > a){
+                answer = a;
+            }else if(a > c && b > c){
+                answer = b;
+            }
+            return answer;
+        }
+        console.log(Solution(7,4,12));
+    </script>
+</body>
+</html>
