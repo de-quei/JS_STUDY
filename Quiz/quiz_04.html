@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코테문제4</title>
+</head>
+<body>
+    <script>
+        /*자연수 N이 입력되면 1부터 N까지의 합을 출력하세요.*/
+        function solution(n){
+            let answer; 
+
+            for(var i = 1; i <= n; i++){
+                answer += i;
+            }
+
+            return answer;
+        }
+
+        console.log(solution(10));
+    </script>
+</body>
+</html>
