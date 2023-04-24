@@ -149,19 +149,24 @@
     //reduce(a, c) --> (i, j 등 변수이름 상관없음)
     //a : accumulator(누산기)
     //c : current value
-    var arr4 = [1, 2, 3, 4, 5];
-    var total = arr4.reduce(function(a, c){
-        return a + c;
-    });
-    console.log(total);
+    // var arr4 = [1, 2, 3, 4, 5];
+    // var total = arr4.reduce(function(a, c){
+    //     return a + c;
+    // });
+    // console.log(total);
     
     //map : filter()와 다른 형태로 새로운 배열의 생성
-    var userlist = [
+    var userList = [
         {firstName: "재석", lastName: "유", email:"yu@gmail.com"},
         {firstName: "종국", lastName: "김", email:"kim@gmail.com"},
         {firstName: "세찬", lastName: "양", email:"yang@gmail.com"},
         {firstName: "석진", lastName: "지", email:"ji@gmail.com"}
     ];
+
+    var userList2 = userList.map(function(){
+        return {fullName: user.lastName + user.firstName}
+    });
+    console.log(userList2);
 
     </script>
 </body>
