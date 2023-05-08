@@ -45,17 +45,27 @@
         //console.log(Math.min(0, 150, 23, 45, -28, 77)); //출력값 : -28
 
         //random()
-        var x1 = Math.random(); // 0이상 1미만의 임의의 난수를 발생
-        //console.log(x1);
+        // var x1 = Math.random(); // 0이상 1미만의 임의의 난수를 발생
+        // //console.log(x1);
 
-        //1에서 6사이의 임의의 랜덤 숫자
-        var x2 = Math.trunc(Math.random() * 6) + 1;
-        //console.log(x2);
+        // //1에서 6사이의 임의의 랜덤 숫자
+        // var x2 = Math.trunc(Math.random() * 6) + 1;
+        // //console.log(x2);
 
-        var x3 = Math.floor(Math.random() * 6) + 1; //x2와 x3의 값은 같음.
-        //console.log(x3);
+        // var x3 = Math.floor(Math.random() * 6) + 1; //x2와 x3의 값은 같음.
+        // //console.log(x3);
 
-        console.log("(" + x2 + ", " + x3 + ")");
+        // console.log("(" + x2 + ", " + x3 + ")");
+
+        //임의의 정수를 생성해주는 함수
+        function getRndInteger(min, max){
+            return Math.floor(Math.random() * (max-min + 1)) + min;
+            //max-min + 1 --> max와 min 사이의 숫자 개수
+        }
+
+        //min = 1, max = 6 (주사위)
+        //min = 50, max = 70
+        console.log(getRndInteger(50, 70));
 
    </script>
 </body>
